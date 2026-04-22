@@ -16,6 +16,6 @@ app.get("/api/list", (req, res)=>{
     res.send(dataset);
 });
 
-app.listen(port, ()=>{
+app.listen(port, "0.0.0.0", ()=>{
     console.log(port+"번 포트 실행중...");
 });
